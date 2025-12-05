@@ -1,8 +1,10 @@
 from flask import Flask, session, redirect, url_for, request, jsonify
 import random
 import re
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 app.secret_key = "n8informatique"
 
