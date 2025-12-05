@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import { Sparkles, Send, RotateCcw } from "lucide-react"
 import type { AgentConfig, Message } from "../types/agent"
 
-const HANDLE_MESSAGE = "http://localhost:5000/handle_message"
+const HANDLE_MESSAGE = "https://n8-chatbot.onrender.com/handle_message"
 
 const AVATAR_OPTIONS = [
   { id: 1, emoji: "🤖", name: "Stupid", color: "from-blue-400 to-blue-600" },
