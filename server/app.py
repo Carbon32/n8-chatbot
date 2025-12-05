@@ -1,12 +1,10 @@
 from flask import Flask, session, redirect, url_for, request, jsonify
-from flask_cors import CORS
 import random
 import re
 
 app = Flask(__name__)
 
 app.secret_key = "n8informatique"
-CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
 
 pers: dict[str, dict[str, list[str]]] = {
 	"stupid": {
